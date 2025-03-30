@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* Styling the body with animated gradient */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+            background: linear-gradient(90deg, #6a11cb, #2575fc, #6a11cb);
+            animation: gradientAnimation 8s infinite;
+            background-size: 300% 300%;
+        }
+
+        /* Defining animation for gradient transition */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .about-container {
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design: Media Queries */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.5;
+            }
+
+            .about-container {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .about-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Content of the page -->
+    <div class="about-container">
+        <h1>About</h1>
+        <p>
+            Hello Everyone, Myself Abhishek Choudhary, pursuing BCA from Dayananda Sagar College of Arts, Science, and Commerce, Bangalore. <br><br>
+            I did my 10th and 12th from Kendriya Vidyalaya. After that, I have recently embarked on my Bachelor of Computer Applications (BCA) journey, and it's been an exciting step toward my passions. <br><br>
+            I am deeply interested in web development, Android app creation, and coding. The world of science and technology fascinates me, and I find immense joy in exploring new concepts, solving problems, and bringing creative ideas to life through code. <br><br>
+            This path truly feels like the perfect blend of my love for innovation and my curiosity for how things work!
+        </p>
+    </div>
+</body>
+</html>
